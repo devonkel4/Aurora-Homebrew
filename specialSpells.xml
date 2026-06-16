@@ -5,7 +5,7 @@
 		<description>Custom Spell List</description>
 		<author>Devon</author>
 		<update version="0.0.1">
-			<file name="spells.xml"/>
+			<file name="specialSpells.xml" url="https://raw.githubusercontent.com/devonkel4/Aurora-Homebrew/refs/heads/main/specialSpells.xml" />
 		</update>
 	</info>
     <element name="Mislead" type="Spell" source="Custom" id="ID_CUSTOM_SPELL_THORN_MISLEAD">
