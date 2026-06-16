@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Custom Spell List</description>
+		<author>Devon</author>
+		<update version="0.0.1">
+			<file name="spells.xml"/>
+		</update>
+	</info>
+    <element name="Mislead" type="Spell" source="Custom" id="ID_CUSTOM_SPELL_THORN_MISLEAD">
+		<supports>Warlock, Rogue, Cleric, Sorcerer, Ranger, Druid</supports>
+		<description>
+			<p>Turn invisible and a perfect, but silent, illusory-double of you appears elsewhere in the room. You control the actions of this double, but the double cannot interact with objects or creatures. If a creature tries to strike your double and "hits", they are no longer fooled, and your Deception has to beat their Perception to not be found.</p>
+		</description>
+		<setters>
+			<set name="keywords">sphere, damage, dexterity, save, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Illusion</set>
+			<set name="time">Action</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">false</set>
+  		  	<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+    <element name="Divination" type="Spell" source="Custom" id="ID_CUSTOM_SPELL_THORN_DIVINATION">
+		<supports>Warlock, Rogue, Cleric, Sorcerer, Ranger, Druid</supports>
+		<description>
+			<p>Twice per game you can scry either into the past or into the future</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Ritual</set>
+			<set name="isRitual">true</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">false</set>
+  		  	<set name="hasMaterialComponent">false</set>
+		</setters>
+	</element>
+</elements>
