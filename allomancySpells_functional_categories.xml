@@ -8,7 +8,7 @@
 			<file name="allomancySpells_functional_categories.xml" url="https://raw.githubusercontent.com/devonkel4/Aurora-Homebrew/refs/heads/main/allomancySpells_functional_categories.xml"/>
 		</update>
 	</info>
-	<element name="Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_ALLOMANCY">
+	<element name="Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_FEATURE_ALLOMANCY">
 		<description>
 			<p>You can learn one or more Allomantic metals. Select each metal as a separate feature; each grants its own actions, bonus actions, reactions, and metal-specific save DC.</p>
 		</description>
@@ -16,11 +16,11 @@
 			<description>Select one or more Allomantic metals.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Allomantic Metal" supports="Allomancy Metal" number="9"/>
+			<select type="Feat" name="Allomantic Metal" supports="Allomancy Metal" number="9"/>
 		</rules>
 	</element>
 	<!--Allomancy Spellcasting / Save DCs-->
-	<element name="Steel Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_STEEL">
+	<element name="Steel Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_FEATURE_STEEL">
 		<description>
 			<p>You have learned to burn steel. Your steel Allomantic abilities use Dexterity for their save DC.</p>
 			<p>Allomantic save DC: 8 + proficiency bonus + Dexterity modifier.</p>
@@ -43,7 +43,7 @@
 			<list>Steel Allomancy</list>
 		</spellcasting>
 	</element>
-	<element name="Iron Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_IRON">
+	<element name="Iron Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_FEATURE_IRON">
 		<description>
 			<p>You have learned to burn iron. Your iron Allomantic abilities use Strength for their save DC.</p>
 			<p>Allomantic save DC: 8 + proficiency bonus + Strength modifier.</p>
@@ -67,7 +67,7 @@
 			<list>Iron Allomancy</list>
 		</spellcasting>
 	</element>
-	<element name="Pewter Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_PEWTER">
+	<element name="Pewter Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_FEATURE_PEWTER">
 		<description>
 			<p>You have learned to burn pewter. Your pewter Allomantic abilities use Strength for their save DC.</p>
 			<p>Allomantic save DC: 8 + proficiency bonus + Strength modifier.</p>
@@ -85,7 +85,7 @@
 			<list>Pewter Allomancy</list>
 		</spellcasting>
 	</element>
-	<element name="Tin Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_TIN">
+	<element name="Tin Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_FEATURE_TIN">
 		<description>
 			<p>You have learned to burn tin. Your tin Allomantic abilities use Wisdom for their save DC.</p>
 			<p>Allomantic save DC: 8 + proficiency bonus + Wisdom modifier.</p>
@@ -103,7 +103,7 @@
 			<list>Tin Allomancy</list>
 		</spellcasting>
 	</element>
-	<element name="Zinc Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_ZINC">
+	<element name="Zinc Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_FEATURE_ZINC">
 		<description>
 			<p>You have learned to burn zinc. Your zinc Allomantic abilities use Charisma for their save DC.</p>
 			<p>Allomantic save DC: 8 + proficiency bonus + Charisma modifier.</p>
@@ -121,7 +121,7 @@
 			<list>Zinc Allomancy</list>
 		</spellcasting>
 	</element>
-	<element name="Brass Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_BRASS">
+	<element name="Brass Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_FEATURE_BRASS">
 		<description>
 			<p>You have learned to burn brass. Your brass Allomantic abilities use Charisma for their save DC.</p>
 			<p>Allomantic save DC: 8 + proficiency bonus + Charisma modifier.</p>
@@ -139,7 +139,7 @@
 			<list>Brass Allomancy</list>
 		</spellcasting>
 	</element>
-	<element name="Copper Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_COPPER">
+	<element name="Copper Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_FEATURE_COPPER">
 		<description>
 			<p>You have learned to burn copper. Your copper Allomantic abilities use Charisma for their save DC.</p>
 			<p>Allomantic save DC: 8 + proficiency bonus + Charisma modifier.</p>
@@ -157,7 +157,7 @@
 			<list>Copper Allomancy</list>
 		</spellcasting>
 	</element>
-	<element name="Bronze Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_BRONZE">
+	<element name="Bronze Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_FEATURE_BRONZE">
 		<description>
 			<p>You have learned to burn bronze. Your bronze Allomantic abilities use Wisdom for their save DC.</p>
 			<p>Allomantic save DC: 8 + proficiency bonus + Wisdom modifier.</p>
@@ -175,7 +175,7 @@
 			<list>Bronze Allomancy</list>
 		</spellcasting>
 	</element>
-	<element name="Gold Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_GOLD">
+	<element name="Gold Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_FEATURE_GOLD">
 		<description>
 			<p>You have learned to burn gold. Your gold Allomantic abilities use Wisdom for their save DC.</p>
 			<p>Allomantic save DC: 8 + proficiency bonus + Wisdom modifier.</p>
