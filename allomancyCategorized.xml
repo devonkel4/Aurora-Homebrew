@@ -20,6 +20,9 @@
 		</description>		<sheet>
 			<description>Steel Allomancy — Save DC: 8 + proficiency bonus + Dexterity modifier.</description>
 		</sheet>
+		<spellcasting name="Steel Allomancy" ability="Dexterity" prepare="false">
+			<list>Steel Allomancy</list>
+		</spellcasting>
 		<rules>
 			<stat name="allomancy:steel:dc" value="8"/>
 			<stat name="allomancy:steel:dc" value="Proficiency"/>
@@ -39,6 +42,9 @@
 		</description>		<sheet>
 			<description>Iron Allomancy — Save DC: 8 + proficiency bonus + Strength modifier.</description>
 		</sheet>
+		<spellcasting name="Iron Allomancy" ability="Strength" prepare="false">
+			<list>Iron Allomancy</list>
+		</spellcasting>
 		<rules>
 			<stat name="allomancy:iron:dc" value="8"/>
 			<stat name="allomancy:iron:dc" value="Proficiency"/>
@@ -59,6 +65,9 @@
 		</description>		<sheet>
 			<description>Pewter Allomancy — Save DC: 8 + proficiency bonus + Strength modifier.</description>
 		</sheet>
+		<spellcasting name="Pewter Allomancy" ability="Strength" prepare="false">
+			<list>Pewter Allomancy</list>
+		</spellcasting>
 		<rules>
 			<stat name="allomancy:pewter:dc" value="8"/>
 			<stat name="allomancy:pewter:dc" value="Proficiency"/>
@@ -85,6 +94,9 @@
 		<sheet>
 			<description>Tin Allomancy — Save DC: 8 + proficiency bonus + Wisdom modifier.</description>
 		</sheet>
+		<spellcasting name="Tin Allomancy" ability="Wisdom" prepare="false">
+			<list>Tin Allomancy</list>
+		</spellcasting>
 		<rules>
 			<stat name="allomancy:tin:dc" value="8"/>
 			<stat name="allomancy:tin:dc" value="Proficiency"/>
@@ -110,6 +122,9 @@
 		<sheet>
 			<description>Zinc Allomancy — Save DC: 8 + proficiency bonus + Charisma modifier.</description>
 		</sheet>
+		<spellcasting name="Zinc Allomancy" ability="Charisma" prepare="false">
+			<list>Zinc Allomancy</list>
+		</spellcasting>
 		<rules>
 			<stat name="allomancy:zinc:dc" value="8"/>
 			<stat name="allomancy:zinc:dc" value="Proficiency"/>
@@ -133,6 +148,9 @@
 		<sheet>
 			<description>Brass Allomancy — Save DC: 8 + proficiency bonus + Charisma modifier.</description>
 		</sheet>
+		<spellcasting name="Brass Allomancy" ability="Charisma" prepare="false">
+			<list>Brass Allomancy</list>
+		</spellcasting>
 		<rules>
 			<stat name="allomancy:brass:dc" value="8"/>
 			<stat name="allomancy:brass:dc" value="Proficiency"/>
@@ -156,6 +174,9 @@
 		<sheet>
 			<description>Copper Allomancy — Save DC: 8 + proficiency bonus + Charisma modifier.</description>
 		</sheet>
+		<spellcasting name="Copper Allomancy" ability="Intelligence" prepare="false">
+			<list>Copper Allomancy</list>
+		</spellcasting>
 		<rules>
 			<stat name="allomancy:copper:dc" value="8"/>
 			<stat name="allomancy:copper:dc" value="Proficiency"/>
@@ -175,6 +196,9 @@
 		<sheet>
 			<description>Bronze Allomancy — Save DC: 8 + proficiency bonus + Wisdom modifier.</description>
 		</sheet>
+		<spellcasting name="Bronze Allomancy" ability="Intelligence" prepare="false">
+			<list>Bronze Allomancy</list>
+		</spellcasting>
 		<rules>
 			<stat name="allomancy:bronze:dc" value="8"/>
 			<stat name="allomancy:bronze:dc" value="Proficiency"/>
@@ -196,6 +220,9 @@
 		<sheet>
 			<description>Gold Allomancy — Save DC: 8 + proficiency bonus + Wisdom modifier.</description>
 		</sheet>
+		<spellcasting name="Gold Allomancy" ability="Wisdom" prepare="false">
+			<list>Gold Allomancy</list>
+		</spellcasting>
 		<rules>
 			<stat name="allomancy:gold:dc" value="8"/>
 			<stat name="allomancy:gold:dc" value="Proficiency"/>
