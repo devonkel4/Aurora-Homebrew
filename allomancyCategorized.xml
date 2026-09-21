@@ -213,74 +213,96 @@
 	<!--None for Iron or Steel-->
 	<!--Pewter-->
 	<element name="Pewter Flare" type="Feat" source="Custom" id="ID_ALLOMANCY_PEWTER_PEWTER_FLARE">
-		<description>
-			<p class="indent">Requires level 1 Pewter Allomancy</p>
-			<p>While burning, gain +2 STR (or +2 bonus to STR checks/attacks) and resistance to bludgeoning/piercing/slashing.</p>
-			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 5, the bonus grows to +3; melee attacks gain an extra 1d4 corresponding damage, and jumping and carrying capacity double</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 1 Pewter Allomancy</p>
+				<p>While burning, gain +2 STR (or +2 bonus to STR checks/attacks) and resistance to bludgeoning/piercing/slashing.</p>
+				<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 5, the bonus grows to +3; melee attacks gain an extra 1d4 corresponding damage, and jumping and carrying capacity double</p>
+			</description>
+		</sheet>
 	</element>
 	<element name="Ironhide" type="Feat" source="Custom" id="ID_ALLOMANCY_PEWTER_IRONHIDE">
-		<description>
-			<p class="indent">Requires level 7 Pewter Allomancy</p>
-			<p>While burning, gain advantage on saves vs being knocked prone, stunned, or grappled; resist exhaustion.</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 7 Pewter Allomancy</p>
+				<p>While burning, gain advantage on saves vs being knocked prone, stunned, or grappled; resist exhaustion.</p>
+			</description>
+		</sheet>
 	</element>
 	<element name="Pewter Juggernaut" type="Feat" source="Custom" id="ID_ALLOMANCY_PEWTER_PEWTER_JUGGERNAUT">
-		<description>
-			<p class="indent">Requires level 9 Pewter Allomancy</p>
-			<p>For 3 turns, gain bonus +2 AC, extra attack once/turn, and immunity to frightened/poison/exhaustion. Recharge per long rest or per vial.</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 9 Pewter Allomancy</p>
+				<p>For 3 turns, gain bonus +2 AC, extra attack once/turn, and immunity to frightened/poison/exhaustion. Recharge per long rest or per vial.</p>
+			</description>
+		</sheet>
 	</element>
 	<element name="Indomitable" type="Feat" source="Custom" id="ID_ALLOMANCY_PEWTER_INDOMITABLE">
-		<description>
-			<p class="indent">Requires level 9 Pewter Allomancy</p>
-			<p>Auto-succeed 1 failed save per long rest while burning.</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 9 Pewter Allomancy</p>
+				<p>Auto-succeed 1 failed save per long rest while burning.</p>
+			</description>
+		</sheet>
 	</element>
 	<!--Tin-->
 	<element name="Heightened Senses" type="Feat" source="Custom" id="ID_ALLOMANCY_TIN_HEIGHTENED_SENSES">
-		<description>
-			<p class="indent">Requires level 1 Tin Allomancy</p>
-			<p>Advantage on Perception checks; gain darkvision 60 ft (or extend existing).</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 1 Tin Allomancy</p>
+				<p>Advantage on Perception checks; gain darkvision 60 ft (or extend existing).</p>
+			</description>
+		</sheet>
 	</element>
 	<element name="Keen Edge" type="Feat" source="Custom" id="ID_ALLOMANCY_TIN_KEEN_EDGE">
-		<description>
-			<p class="indent">Requires level 3 Tin Allomancy</p>
-			<p>When you sense hidden enemies you may pinpoint their rough direction and get advantage on first hit.</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 3 Tin Allomancy</p>
+				<p>When you sense hidden enemies you may pinpoint their rough direction and get advantage on first hit.</p>
+			</description>
+		</sheet>
 	</element>
 	<element name="Acute Detection" type="Feat" source="Custom" id="ID_ALLOMANCY_TIN_ACUTE_DETECTION">
-		<description>
-			<p class="indent">Requires level 3 Tin Allomancy</p>
-			<p>Detect poison, illusions, or unseen traps with a single Investigation check (no tool needed).</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 3 Tin Allomancy</p>
+				<p>Detect poison, illusions, or unseen traps with a single Investigation check (no tool needed).</p>
+			</description>
+		</sheet>
 	</element>
 	<element name="Aura of Awareness" type="Feat" source="Custom" id="ID_ALLOMANCY_TIN_AURA_OF_AWARENESS">
-		<description>
-			<p class="indent">Requires level 5 Tin Allomancy</p>
-			<p>Allies within 10 ft gain +2 to passive Perception and +1 Initiative.</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 5 Tin Allomancy</p>
+				<p>Allies within 10 ft gain +2 to passive Perception and +1 Initiative.</p>
+			</description>
+		</sheet>
 	</element>
 	<element name="Perceptual Mastery" type="Feat" source="Custom" id="ID_ALLOMANCY_TIN_PERCEPTUAL_MASTERY">
-		<description>
-			<p class="indent">Requires level 9 Tin Allomancy</p>
-			<p>Sense through walls ≤30 ft (direction + silhouette); automatically succeed on one Perception/Investigation check per encounter.</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 9 Tin Allomancy</p>
+				<p>Sense through walls ≤30 ft (direction + silhouette); automatically succeed on one Perception/Investigation check per encounter.</p>
+			</description>
+		</sheet>
 	</element>
 	<!--None for Zinc or Brass or Copper or Bronze-->
 	<!--Gold-->
 	<element name="Lingering Vision" type="Feat" source="Custom" id="ID_ALLOMANCY_GOLD_LINGERING_VISION">
-		<description>
-			<p class="indent">Requires level 5 Gold Allomancy</p>
-			<p>Once per long rest, you can ask the DM a single strong “what-if” or alternate history style clue that gives a concrete lead (investigative boon).</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 5 Gold Allomancy</p>
+				<p>Once per long rest, you can ask the DM a single strong “what-if” or alternate history style clue that gives a concrete lead (investigative boon).</p>
+			</description>
+		</sheet>
 	</element>
 	<element name="Temporal Insight" type="Feat" source="Custom" id="ID_ALLOMANCY_GOLD_TEMPORAL_INSIGHT">
-		<description>
-			<p class="indent">Requires level 9 Gold Allomancy</p>
-			<p>Once per long rest you get a clear vision relevant to a major decision (campaign-level clue) or gain advantage to auto-succeed one critical skill check.</p>
-		</description>
+		<sheet>
+			<description>
+				<p class="indent">Requires level 9 Gold Allomancy</p>
+				<p>Once per long rest you get a clear vision relevant to a major decision (campaign-level clue) or gain advantage to auto-succeed one critical skill check.</p>
+			</description>
+		</sheet>
 	</element>
 	<!--Steel Level 1-->
     <element name="Coin Push" type="Class Feature" source="Custom" id="ID_ALLOMANCY_STEEL_COIN_PUSH">
