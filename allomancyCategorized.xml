@@ -72,12 +72,12 @@
 			<stat name="allomancy:pewter:dc" value="8"/>
 			<stat name="allomancy:pewter:dc" value="Proficiency"/>
 			<stat name="allomancy:pewter:dc" value="Strength Modifier"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_PEWTER_STRIKE" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_RECOVERY" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_ADRENAL_SURGE" level="3"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_SHOCKWAVE_SMASH" level="3"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_CHARGE_STRIKE" level="7"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_PEWTER_JUGGERNAUT" level="9"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_PEWTER_STRIKE" spellcasting="Pewter Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_RECOVERY" spellcasting="Pewter Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_ADRENAL_SURGE" spellcasting="Pewter Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_SHOCKWAVE_SMASH" spellcasting="Pewter Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_CHARGE_STRIKE" spellcasting="Pewter Allomancy" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_PEWTER_JUGGERNAUT" spellcasting="Pewter Allomancy" level="9"/>
 			<grant type="Feat" id="ID_ALLOMANCY_PEWTER_PEWTER_FLARE"/>
 			<grant type="Feat" id="ID_ALLOMANCY_PEWTER_IRONHIDE"/>
 			<grant type="Feat" id="ID_ALLOMANCY_PEWTER_PEWTER_JUGGERNAUT"/>
@@ -101,10 +101,10 @@
 			<stat name="allomancy:tin:dc" value="8"/>
 			<stat name="allomancy:tin:dc" value="Proficiency"/>
 			<stat name="allomancy:tin:dc" value="Wisdom Modifier"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_SENSE_FOCUS" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_WARNING_CRY" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_TRUE_SIGHT" level="7"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_INITIATIVE_SURGE" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_SENSE_FOCUS" spellcasting="Tin Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_WARNING_CRY" spellcasting="Tin Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_TRUE_SIGHT" spellcasting="Tin Allomancy" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_INITIATIVE_SURGE" spellcasting="Tin Allomancy" level="7"/>
 			<grant type="Feat" id="ID_ALLOMANCY_TIN_HEIGHTENED_SENSES"/>
 			<grant type="Feat" id="ID_ALLOMANCY_TIN_KEEN_EDGE"/>
 			<grant type="Feat" id="ID_ALLOMANCY_TIN_ACUTE_DETECTION"/>
@@ -129,13 +129,13 @@
 			<stat name="allomancy:zinc:dc" value="8"/>
 			<stat name="allomancy:zinc:dc" value="Proficiency"/>
 			<stat name="allomancy:zinc:dc" value="Charisma Modifier"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_INCITE" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_EMOTIONAL_SPIKE" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_FRENZY" level="3"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_ROUSE" level="3"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_RIOT_AURA" level="5"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_MASS_FRENZY_CALM_SWITCH" level="7"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_EMOTIONAL_OVERDRIVE" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_INCITE" spellcasting="Zinc Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_EMOTIONAL_SPIKE" spellcasting="Zinc Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_FRENZY" spellcasting="Zinc Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_ROUSE" spellcasting="Zinc Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_RIOT_AURA" spellcasting="Zinc Allomancy" level="5"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_MASS_FRENZY_CALM_SWITCH" spellcasting="Zinc Allomancy" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_EMOTIONAL_OVERDRIVE" spellcasting="Zinc Allomancy" level="7"/>
 		</rules>		
 	</element>
 	<element name="Brass Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_BRASS">
@@ -155,13 +155,13 @@
 			<stat name="allomancy:brass:dc" value="8"/>
 			<stat name="allomancy:brass:dc" value="Proficiency"/>
 			<stat name="allomancy:brass:dc" value="Charisma Modifier"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_SOOTHE" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_EMOTIONAL_DULL" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_MASS_SOOTHE" level="3"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_CHARM_FLICKER" level="3"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_SOOTHE_AURA" level="5"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_HARMONY_WAVE" level="7"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_HYPNOTIC_CHARM" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_SOOTHE" spellcasting="Brass Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_EMOTIONAL_DULL" spellcasting="Brass Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_MASS_SOOTHE" spellcasting="Brass Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_CHARM_FLICKER" spellcasting="Brass Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_SOOTHE_AURA" spellcasting="Brass Allomancy" level="5"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_HARMONY_WAVE" spellcasting="Brass Allomancy" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_HYPNOTIC_CHARM" spellcasting="Brass Allomancy" level="7"/>
 		</rules>		
 	</element>
 	<element name="Copper Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_COPPER">
@@ -181,9 +181,9 @@
 			<stat name="allomancy:copper:dc" value="8"/>
 			<stat name="allomancy:copper:dc" value="Proficiency"/>
 			<stat name="allomancy:copper:dc" value="Charisma Modifier"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_COPPER_COPPERCLOUD" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_COPPER_SMOTHER" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_COPPER_IRONWALL" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_COPPER_COPPERCLOUD" spellcasting="Copper Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_COPPER_SMOTHER" spellcasting="Copper Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_COPPER_IRONWALL" spellcasting="Copper Allomancy" level="7"/>
 		</rules>		
 	</element>
 	<element name="Bronze Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_BRONZE">
@@ -203,11 +203,11 @@
 			<stat name="allomancy:bronze:dc" value="8"/>
 			<stat name="allomancy:bronze:dc" value="Proficiency"/>
 			<stat name="allomancy:bronze:dc" value="Wisdom Modifier"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_DETECT_BURN" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_SENSE_FLARE" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_PINPOINT" level="3"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_DISRUPT_PULSE" level="7"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_SEISMIC_MASTERY" level="9"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_DETECT_BURN" spellcasting="Bronze Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_SENSE_FLARE" spellcasting="Bronze Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_PINPOINT" spellcasting="Bronze Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_DISRUPT_PULSE" spellcasting="Bronze Allomancy" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_SEISMIC_MASTERY" spellcasting="Bronze Allomancy" level="9"/>
 		</rules>		
 	</element>
 	<element name="Gold Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_GOLD">
@@ -227,11 +227,11 @@
 			<stat name="allomancy:gold:dc" value="8"/>
 			<stat name="allomancy:gold:dc" value="Proficiency"/>
 			<stat name="allomancy:gold:dc" value="Wisdom Modifier"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_GLIMPSE" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_GLIMPSE_FATE" level="1"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_FLASH_VISION" level="3"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_MINOR_PROPHECY" level="3"/>
-			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_ALTERNATE_SELF" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_GLIMPSE" spellcasting="Gold Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_GLIMPSE_FATE" spellcasting="Gold Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_FLASH_VISION" spellcasting="Gold Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_MINOR_PROPHECY" spellcasting="Gold Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_ALTERNATE_SELF" spellcasting="Gold Allomancy" level="7"/>
 			<grant type="Feat" id="ID_ALLOMANCY_GOLD_LINGERING_VISION"/>
 			<grant type="Feat" id="ID_ALLOMANCY_GOLD_TEMPORAL_INSIGHT"/>
 		</rules>		
