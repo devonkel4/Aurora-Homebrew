@@ -1,0 +1,1318 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<elements>
+	<info>
+		<name>Allomantic Abilities</name>
+		<description>Custom Allomantic abilities organized by metal category.</description>
+		<author>Devon</author>
+		<update version="0.0.1">
+			<file name="allomancyCategorized.xml" url="https://raw.githubusercontent.com/devonkel4/Aurora-Homebrew/refs/heads/main/allomancyCategorized.xml"/>
+		</update>
+	</info>
+	<element name="Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_ALL">
+		<description>You can select one or more Allomantic metals. Each metal feature grants its associated Allomantic abilities.</description>
+		<select type="Feat" name="Allomantic Metal" supports="Allomancy Metal" number="9"/>
+	</element>
+	<element name="Steel Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_STEEL">
+		<supports>Allomancy Metal</supports>
+		<description>
+			<p>You have learned to burn steel. Your steel Allomantic abilities use Dexterity for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Dexterity modifier.</p>
+		</description>		<sheet>
+			<description>Steel Allomancy — Save DC: 8 + proficiency bonus + Dexterity modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:steel:dc" value="8"/>
+			<stat name="allomancy:steel:dc" value="Proficiency"/>
+			<stat name="allomancy:steel:dc" value="Dexterity Modifier"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_STEEL_COIN_PUSH" spellcasting="Steel Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_STEEL_STEEL_VAULT" spellcasting="Steel Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_STEEL_DEFLECTIVE_VAULT" spellcasting="Steel Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_STEEL_KINETIC_SHOVE" spellcasting="Steel Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_STEEL_STEELSTORM" spellcasting="Steel Allomancy" level="9"/>
+		</rules>
+	</element>
+	<element name="Iron Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_IRON">
+		<supports>Allomancy Metal</supports>
+		<description>
+			<p>You have learned to burn iron. Your iron Allomantic abilities use Strength for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Strength modifier.</p>
+		</description>		<sheet>
+			<description>Iron Allomancy — Save DC: 8 + proficiency bonus + Strength modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:iron:dc" value="8"/>
+			<stat name="allomancy:iron:dc" value="Proficiency"/>
+			<stat name="allomancy:iron:dc" value="Strength Modifier"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_IRON_PULL_METAL" spellcasting="Iron Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_IRON_ANCHOR_SPRINT" spellcasting="Iron Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_IRON_DEFLECTIVE_PULL" spellcasting="Iron Allomancy" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_IRON_TETHER_BREAK" spellcasting="Iron Allomancy" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_IRON_IRONSTORM" spellcasting="Iron Allomancy" level="9"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_IRON_IRONSTANCE" spellcasting="Iron Allomancy" level="9"/>
+		</rules>
+	</element>
+	<element name="Pewter Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_PEWTER">
+		<supports>Allomancy Metal</supports>
+		<description>
+			<p>You have learned to burn pewter. Your pewter Allomantic abilities use Strength for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Strength modifier.</p>
+		</description>		<sheet>
+			<description>Pewter Allomancy — Save DC: 8 + proficiency bonus + Strength modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:pewter:dc" value="8"/>
+			<stat name="allomancy:pewter:dc" value="Proficiency"/>
+			<stat name="allomancy:pewter:dc" value="Strength Modifier"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_PEWTER_STRIKE" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_RECOVERY" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_ADRENAL_SURGE" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_SHOCKWAVE_SMASH" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_CHARGE_STRIKE" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_PEWTER_PEWTER_JUGGERNAUT" level="9"/>
+			<grant type="Feat" id="ID_ALLOMANCY_PEWTER_PEWTER_FLARE"/>
+			<grant type="Feat" id="ID_ALLOMANCY_PEWTER_IRONHIDE"/>
+			<grant type="Feat" id="ID_ALLOMANCY_PEWTER_PEWTER_JUGGERNAUT"/>
+			<grant type="Feat" id="ID_ALLOMANCY_PEWTER_INDOMITABLE"/>
+		</rules>
+	</element>
+	<element name="Tin Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_TIN">
+		<supports>Allomancy Metal</supports>
+		<description>
+			<p>You have learned to burn tin. Your tin Allomantic abilities use Wisdom for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Wisdom modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Tin Allomancy — Save DC: 8 + proficiency bonus + Wisdom modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:tin:dc" value="8"/>
+			<stat name="allomancy:tin:dc" value="Proficiency"/>
+			<stat name="allomancy:tin:dc" value="Wisdom Modifier"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_SENSE_FOCUS" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_WARNING_CRY" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_TRUE_SIGHT" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_TIN_INITIATIVE_SURGE" level="7"/>
+			<grant type="Feat" id="ID_ALLOMANCY_TIN_HEIGHTENED_SENSES"/>
+			<grant type="Feat" id="ID_ALLOMANCY_TIN_KEEN_EDGE"/>
+			<grant type="Feat" id="ID_ALLOMANCY_TIN_ACUTE_DETECTION"/>
+			<grant type="Feat" id="ID_ALLOMANCY_TIN_AURA_OF_AWARENESS"/>
+			<grant type="Feat" id="ID_ALLOMANCY_TIN_PERCEPTUAL_MASTERY"/>
+		</rules>		
+	</element>
+	<element name="Zinc Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_ZINC">
+		<supports>Allomancy Metal</supports>
+		<description>
+			<p>You have learned to burn zinc. Your zinc Allomantic abilities use Charisma for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Charisma modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Zinc Allomancy — Save DC: 8 + proficiency bonus + Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:zinc:dc" value="8"/>
+			<stat name="allomancy:zinc:dc" value="Proficiency"/>
+			<stat name="allomancy:zinc:dc" value="Charisma Modifier"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_INCITE" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_EMOTIONAL_SPIKE" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_FRENZY" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_ROUSE" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_RIOT_AURA" level="5"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_MASS_FRENZY_CALM_SWITCH" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_ZINC_EMOTIONAL_OVERDRIVE" level="7"/>
+		</rules>		
+	</element>
+	<element name="Brass Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_BRASS">
+		<supports>Allomancy Metal</supports>
+		<description>
+			<p>You have learned to burn brass. Your brass Allomantic abilities use Charisma for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Charisma modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Brass Allomancy — Save DC: 8 + proficiency bonus + Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:brass:dc" value="8"/>
+			<stat name="allomancy:brass:dc" value="Proficiency"/>
+			<stat name="allomancy:brass:dc" value="Charisma Modifier"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_SOOTHE" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_EMOTIONAL_DULL" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_MASS_SOOTHE" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_CHARM_FLICKER" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_SOOTHE_AURA" level="5"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_HARMONY_WAVE" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRASS_HYPNOTIC_CHARM" level="7"/>
+		</rules>		
+	</element>
+	<element name="Copper Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_COPPER">
+		<supports>Allomancy Metal</supports>
+		<description>
+			<p>You have learned to burn copper. Your copper Allomantic abilities use Charisma for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Charisma modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Copper Allomancy — Save DC: 8 + proficiency bonus + Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:copper:dc" value="8"/>
+			<stat name="allomancy:copper:dc" value="Proficiency"/>
+			<stat name="allomancy:copper:dc" value="Charisma Modifier"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_COPPER_COPPERCLOUD" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_COPPER_SMOTHER" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_COPPER_IRONWALL" level="7"/>
+		</rules>		
+	</element>
+	<element name="Bronze Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_BRONZE">
+		<supports>Allomancy Metal</supports>
+		<description>
+			<p>You have learned to burn bronze. Your bronze Allomantic abilities use Wisdom for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Wisdom modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Bronze Allomancy — Save DC: 8 + proficiency bonus + Wisdom modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:bronze:dc" value="8"/>
+			<stat name="allomancy:bronze:dc" value="Proficiency"/>
+			<stat name="allomancy:bronze:dc" value="Wisdom Modifier"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_DETECT_BURN" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_SENSE_FLARE" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_PINPOINT" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_DISRUPT_PULSE" level="7"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_BRONZE_SEISMIC_MASTERY" level="9"/>
+		</rules>		
+	</element>
+	<element name="Gold Allomancy" type="Feat" source="Custom" id="ID_ALLOMANCY_CATEGORY_GOLD">
+		<supports>Allomancy Metal</supports>
+		<description>
+			<p>You have learned to burn gold. Your gold Allomantic abilities use Wisdom for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Wisdom modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Gold Allomancy — Save DC: 8 + proficiency bonus + Wisdom modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:gold:dc" value="8"/>
+			<stat name="allomancy:gold:dc" value="Proficiency"/>
+			<stat name="allomancy:gold:dc" value="Wisdom Modifier"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_GLIMPSE" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_GLIMPSE_FATE" level="1"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_FLASH_VISION" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_MINOR_PROPHECY" level="3"/>
+			<grant type="Class Feature" id="ID_ALLOMANCY_GOLD_ALTERNATE_SELF" level="7"/>
+			<grant type="Feat" id="ID_ALLOMANCY_GOLD_LINGERING_VISION"/>
+			<grant type="Feat" id="ID_ALLOMANCY_GOLD_TEMPORAL_INSIGHT"/>
+		</rules>		
+	</element>
+	<!--Passives and Abilities for all metals-->
+	<!--None for Iron or Steel-->
+	<!--Pewter-->
+	<element name="Pewter Flare" type="Feat" source="Custom" id="ID_ALLOMANCY_PEWTER_PEWTER_FLARE">
+		<description>
+			<p class="indent">Requires level 1 Pewter Allomancy</p>
+			<p>While burning, gain +2 STR (or +2 bonus to STR checks/attacks) and resistance to bludgeoning/piercing/slashing.</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 5, the bonus grows to +3; melee attacks gain an extra 1d4 corresponding damage, and jumping and carrying capacity double</p>
+		</description>
+	</element>
+	<element name="Ironhide" type="Feat" source="Custom" id="ID_ALLOMANCY_PEWTER_IRONHIDE">
+		<description>
+			<p class="indent">Requires level 7 Pewter Allomancy</p>
+			<p>While burning, gain advantage on saves vs being knocked prone, stunned, or grappled; resist exhaustion.</p>
+		</description>
+	</element>
+	<element name="Pewter Juggernaut" type="Feat" source="Custom" id="ID_ALLOMANCY_PEWTER_PEWTER_JUGGERNAUT">
+		<description>
+			<p class="indent">Requires level 9 Pewter Allomancy</p>
+			<p>For 3 turns, gain bonus +2 AC, extra attack once/turn, and immunity to frightened/poison/exhaustion. Recharge per long rest or per vial.</p>
+		</description>
+	</element>
+	<element name="Indomitable" type="Feat" source="Custom" id="ID_ALLOMANCY_PEWTER_INDOMITABLE">
+		<description>
+			<p class="indent">Requires level 9 Pewter Allomancy</p>
+			<p>Auto-succeed 1 failed save per long rest while burning.</p>
+		</description>
+	</element>
+	<!--Tin-->
+	<element name="Heightened Senses" type="Feat" source="Custom" id="ID_ALLOMANCY_TIN_HEIGHTENED_SENSES">
+		<description>
+			<p class="indent">Requires level 1 Tin Allomancy</p>
+			<p>Advantage on Perception checks; gain darkvision 60 ft (or extend existing).</p>
+		</description>
+	</element>
+	<element name="Keen Edge" type="Feat" source="Custom" id="ID_ALLOMANCY_TIN_KEEN_EDGE">
+		<description>
+			<p class="indent">Requires level 3 Tin Allomancy</p>
+			<p>When you sense hidden enemies you may pinpoint their rough direction and get advantage on first hit.</p>
+		</description>
+	</element>
+	<element name="Acute Detection" type="Feat" source="Custom" id="ID_ALLOMANCY_TIN_ACUTE_DETECTION">
+		<description>
+			<p class="indent">Requires level 3 Tin Allomancy</p>
+			<p>Detect poison, illusions, or unseen traps with a single Investigation check (no tool needed).</p>
+		</description>
+	</element>
+	<element name="Aura of Awareness" type="Feat" source="Custom" id="ID_ALLOMANCY_TIN_AURA_OF_AWARENESS">
+		<description>
+			<p class="indent">Requires level 5 Tin Allomancy</p>
+			<p>Allies within 10 ft gain +2 to passive Perception and +1 Initiative.</p>
+		</description>
+	</element>
+	<element name="Perceptual Mastery" type="Feat" source="Custom" id="ID_ALLOMANCY_TIN_PERCEPTUAL_MASTERY">
+		<description>
+			<p class="indent">Requires level 9 Tin Allomancy</p>
+			<p>Sense through walls ≤30 ft (direction + silhouette); automatically succeed on one Perception/Investigation check per encounter.</p>
+		</description>
+	</element>
+	<!--None for Zinc or Brass or Copper or Bronze-->
+	<!--Gold-->
+	<element name="Lingering Vision" type="Feat" source="Custom" id="ID_ALLOMANCY_GOLD_LINGERING_VISION">
+		<description>
+			<p class="indent">Requires level 5 Gold Allomancy</p>
+			<p>Once per long rest, you can ask the DM a single strong “what-if” or alternate history style clue that gives a concrete lead (investigative boon).</p>
+		</description>
+	</element>
+	<element name="Temporal Insight" type="Feat" source="Custom" id="ID_ALLOMANCY_GOLD_TEMPORAL_INSIGHT">
+		<description>
+			<p class="indent">Requires level 9 Gold Allomancy</p>
+			<p>Once per long rest you get a clear vision relevant to a major decision (campaign-level clue) or gain advantage to auto-succeed one critical skill check.</p>
+		</description>
+	</element>
+	<!--Steel Level 1-->
+    <element name="Coin Push" type="Class Feature" source="Custom" id="ID_ALLOMANCY_STEEL_COIN_PUSH">
+		<supports>Steel Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Steel Allomancy</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 3, Coin Push upgrades to 2 coins per Action, each dealing 1d6 + DEX piercing, and the range increases to 60 ft. You may target the same or different targets. At level 5, you can push or manipulate up to 3 metal anchors in the same turn, spread across your Action and Allomantic Reactions, and the vault distance increases to 40 ft. At level 7, you can fire 3 coins, each dealing 1d8 + DEX piercing, choosing a large spread or precision. At level 9, the attack becomes Steelstorm and you gain Steel Flight: sustained pushes let you ride pushes between anchors, effectively controlled hovering/glide up to 60 ft per round while anchor contact exists.</p>
+			<p>Fire 1 metal piece as a ranged attack (30ft) Hit: 1d4 + DEX piercing.</p>
+		</description>
+		<setters>
+			<set name="keywords">damage, steel, allomancy, dexterity, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+    <element name="Steel Vault" type="Class Feature" source="Custom" id="ID_ALLOMANCY_STEEL_STEEL_VAULT">
+		<supports>Steel Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Steel Allomancy</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 5, the vault distance increases to 40 ft. At level 9, you can push or manipulate up to 3 metal anchors in the same turn, spread across your Action and Allomantic Reactions.</p>
+			<p>If there is a nearby metal anchor vault up to 20 feet away from it.</p>
+		</description>
+		<setters>
+			<set name="keywords">dexterity, bonus action, movement, allomancy, steel</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<element name="Deflective Vault" type="Class Feature" source="Custom" id="ID_ALLOMANCY_STEEL_DEFLECTIVE_VAULT">
+		<supports>Steel Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Steel Allomancy</p>
+			<p>Impose disadvantage on one incoming metallic ranged attack that targets you or an ally.</p>
+		</description>
+		<setters>
+			<set name="keywords">dexterity, reaction, disadvantage, deflect, allomancy, steel</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Reaction</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<!--Steel Level 3-->
+	<element name="Kinetic Shove" type="Class Feature" source="Custom" id="ID_ALLOMANCY_STEEL_KINETIC_SHOVE">
+		<supports>Steel Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Steel Allomancy</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 7, if you successfully push a metal-clad target, they suffer +1d6 bludgeoning as your push slams metal into armor or limbs and stuns them if hitting an obstacle.</p>
+			<p>When you push against a metal-worn target, they must make a STR save vs your Allomancy DC or be pushed 10 ft and knocked prone if they hit an obstacle.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, action, bonus action, shove, prone, allomancy, steel</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action or Bonus Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<!--Steel Level 9-->
+	<element name="Steelstorm" type="Class Feature" source="Custom" id="ID_ALLOMANCY_STEEL_STEELSTORM">
+		<supports>Steel Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 9 Steel Allomancy</p>
+			<p>Spray of metal pieces; targets make a DEX save, or take 3d6 piercing (halved on save).</p>
+		</description>
+		<setters>
+			<set name="keywords">dexterity, action, damage, allomancy, steel</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">20 ft cone</set>
+		</setters>
+	</element>
+	<!--Iron Level 1-->
+	<element name="Pull Metal" type="Class Feature" source="Custom" id="ID_ALLOMANCY_IRON_PULL_METAL">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Iron Allomancy</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 3, Pull Metal upgrades to 2 metal objects per Action, each targetable independently, and the range increases to 60 ft. At level 5, you can manipulate up to 3 metal sources in a single turn. At level 7, the attack can pull 3 metal objects and you can disarm 2 targets; Iron Net becomes available to coordinate up to 3 small metal items in a 30-ft spread, forcing STR saves or restraining the target for 1 round or dealing 2d8 + STR bludgeoning. At level 9, Ironstorm pulls and flings all unsecured metal objects within 30 ft towards yourself.</p>
+			<p>Pull 1 metal piece as a ranged attack (30ft) Hit: 1d4 + STR piercing. If the metal object is held, target makes a contested STR save, on fail you rip it free if held or yanks them 10 ft if worn.</p>
+		</description>
+		<setters>
+			<set name="keywords">damage, iron, allomancy, strength, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<element name="Anchor Sprint" type="Class Feature" source="Custom" id="ID_ALLOMANCY_IRON_ANCHOR_SPRINT">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Iron Allomancy</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 5, the sprint distance increases to 40 ft. At level 7, you can swing between anchors with complete control (treat as expert Acrobatics; no falling on a failed check). At level 9, this increases to 60 ft.</p>
+			<p>If there is a nearby metal anchor vault up to 20 feet towards it.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, bonus action, movement, allomancy, iron</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<element name="Deflective Pull" type="Class Feature" source="Custom" id="ID_ALLOMANCY_IRON_DEFLECTIVE_PULL">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Iron Allomancy</p>
+			<p>Impose disadvantage on one incoming metallic ranged attack that targets you or an ally. You may redirect it slightly.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, reaction, disadvantage, deflect, allomancy, iron</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Reaction</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<!--Iron Level 3-->
+	<element name="Tether Break" type="Class Feature" source="Custom" id="ID_ALLOMANCY_IRON_TETHER_BREAK">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Iron Allomancy</p>
+			<p>Pull an anchor so forcefully it yanks a creature into prone or a hazard (10 ft), targetted creature makes a STR save to resist.</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 7, if you successfully pull a metal-clad target, they suffer +1d6 bludgeoning as the back of their armor caves in.</p> <!--Check abt this upgrade, included to match steel-->
+		</description>
+		<setters>
+			<set name="keywords">strength, action, bonus action, yank, prone, allomancy, iron</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action or Bonus Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<!--Iron Level 9-->
+	<element name="Ironstorm" type="Class Feature" source="Custom" id="ID_ALLOMANCY_IRON_IRONSTORM">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 9 Iron Allomancy</p>
+			<p>Pull all unsecured metal objects within 30 feet towards yourself; targets make a DEX save, or take 1d6 piercing (halved on save) per object in path.</p>
+		</description>
+		<setters>
+			<set name="keywords">dexterity, action, damage, allomancy, iron</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">30 ft sphere</set>
+		</setters>
+	</element>
+	<element name="Iron Stance" type="Class Feature" source="Custom" id="ID_ALLOMANCY_IRON_IRONSTANCE">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 9 Iron Allomancy</p>
+			<p>You may pull all metal aimed at you to a piece of armor on yourself. STR save (DC 10). Warning: the metal can still bounce and hit you.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, action, damage, allomancy, iron</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+  			<set name="hasSomaticComponent">true</set>
+  		  	<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<!--Pewter Level 1-->
+	<!--Pewter passives in different area (same for Greater Flare, Ironhide, and Indomitable)-->
+    <element name="Pewter Strike" type="Class Feature" source="Custom" id="ID_ALLOMANCY_PEWTER_PEWTER_STRIKE">
+        <supports>Pewter Allomancy</supports>
+        <description>
+            <p class="indent">Prerequisite: Level 1 Pewter Allomancy</p>
+            <p>On hit, add +1d8 damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">strength, action, damage, pewter, allomancy</set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">Action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="range">Self</set>
+        </setters>
+    </element>
+    <element name="Pewter Recovery" type="Class Feature" source="Custom" id="ID_ALLOMANCY_PEWTER_RECOVERY">
+        <supports>Pewter Allomancy</supports>
+        <description>
+            <p class="indent">Prerequisite: Level 1 Pewter Allomancy</p>
+            <p>When reduced to 0 HP, make a CON save (DC 10) to stay at 1 HP instead of falling unconscious. Uses 1 Allomantic Reaction.</p>
+        </description>
+        <setters>
+            <set name="keywords">constitution, reaction, recovery, pewter, allomancy</set>
+            <set name="level">0</set>
+            <set name="school">Abjuration</set>
+            <set name="time">Reaction</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="range">Self</set>
+        </setters>
+    </element>
+    <!--Pewter Level 3-->
+        <element name="Adrenal Surge" type="Class Feature" source="Custom" id="ID_ALLOMANCY_PEWTER_ADRENAL_SURGE">
+        <supports>Pewter Allomancy</supports>
+        <description>
+            <p class="indent">Prerequisite: Level 3 Pewter Allomancy</p>
+            <p>Spend an Action or Bonus Action to gain temporary HP equal to 1d6 + CON, to a maximum of 25.</p>
+        </description>
+        <setters>
+            <set name="keywords">constitution, action, bonus action, temporary hp, pewter, allomancy</set>
+            <set name="level">0</set>
+            <set name="school">Abjuration</set>
+            <set name="time">Action or Bonus Action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="range">Self</set>
+        </setters>
+    </element>
+    <element name="Shockwave Smash" type="Class Feature" source="Custom" id="ID_ALLOMANCY_PEWTER_SHOCKWAVE_SMASH">
+        <supports>Pewter Allomancy</supports>
+        <description>
+            <p class="indent">Prerequisite: Level 3 Pewter Allomancy</p>
+            <p>Make a ground slam, affected targets make a STR save or are knocked prone and take 1d6 bludgeoning.</p>
+        </description>
+        <setters>
+            <set name="keywords">strength, action, prone, damage, pewter, allomancy</set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">Action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="range">10 ft circle</set>
+        </setters>
+    </element>
+    <!--Pewter Level 7-->
+    <element name="Charge Strike" type="Class Feature" source="Custom" id="ID_ALLOMANCY_PEWTER_CHARGE_STRIKE">
+        <supports>Pewter Allomancy</supports>
+        <description>
+            <p class="indent">Prerequisite: Level 7 Pewter Allomancy</p>
+            <p>Move 20+ ft before an attack using current speed, if you do, add an extra 2d6 damage on one hit.</p>
+        </description>
+        <setters>
+            <set name="keywords">strength, action, movement, damage, pewter, allomancy</set>
+            <set name="level">0</set>
+            <set name="school">Evocation</set>
+            <set name="time">Action</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="range">Self</set>
+        </setters>
+    </element>
+    <!--Pewter Level 9-->
+    <element name="Pewter Juggernaut" type="Class Feature" source="Custom" id="ID_ALLOMANCY_PEWTER_PEWTER_JUGGERNAUT">
+        <supports>Pewter Allomancy</supports>
+        <description>
+            <p class="indent">Prerequisite: Level 9 Pewter Allomancy</p>
+            <p>For 3 turns, gain bonus AC (+ 2 AC), extra attack once/turn, and immunity to frightened/poison/exhaustion. Recharge per long rest or per vial.</p> <!--Question this???-->
+        </description>
+        <setters>
+            <set name="keywords">strength, defense, ability, pewter, allomancy</set>
+            <set name="level">0</set>
+            <set name="school">Abjuration</set>
+            <set name="time">Free</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="range">Self</set>
+        </setters>
+    </element>
+    <!--Tin Level 1-->
+	<element name="Sense Focus" type="Class Feature" source="Custom" id="ID_ALLOMANCY_TIN_SENSE_FOCUS">
+		<supports>Tin Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Tin Allomancy</p>
+			<p>For 1 round, gain advantage on attack rolls against invisible or hidden targets and on Insight checks.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, perception, invisible, hidden, tin, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+	<element name="Warning Cry" type="Class Feature" source="Custom" id="ID_ALLOMANCY_TIN_WARNING_CRY">
+		<supports>Tin Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Tin Allomancy</p>
+			<p>Grant one ally within 30 ft advantage on a DEX save. Uses 1 Allomantic Reaction.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, reaction, advantage, tin, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Reaction</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<!--Tin Level 3-->
+    <!--These are abilities-->
+
+	<!-- <element name="Keen Edge" type="Spell" source="Custom" id="ID_ALLOMANCY_TIN_KEEN_EDGE">
+		<supports>Warlock, Rogue, Cleric, Sorcerer, Ranger, Druid, Bard, Monk, Barbarian, Paladin, Fighter, Artificer</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Tin Allomancy</p>
+			<p>When you sense hidden enemies, pinpoint their rough direction and gain advantage on the first hit against one of them.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, detection, attack, tin, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<element name="Acute Detection" type="Spell" source="Custom" id="ID_ALLOMANCY_TIN_ACUTE_DETECTION">
+		<supports>Warlock, Rogue, Cleric, Sorcerer, Ranger, Druid, Bard, Monk, Barbarian, Paladin, Fighter, Artificer</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Tin Allomancy</p>
+			<p>Detect poison, illusions, or unseen traps with a single Investigation check; no tool is needed.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, detection, investigation, tin, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element> -->
+	<!--Tin Level 7-->
+	<element name="True Sight" type="Class Feature" source="Custom" id="ID_ALLOMANCY_TIN_TRUE_SIGHT">
+		<supports>Tin Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 7 Tin Allomancy</p>
+			<p>For 1 minute, gain truesight, perceive through invisibility, illusions, and darkness; see true forms within 30 ft.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, perception, tin, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+	<element name="Initiative Surge" type="Class Feature" source="Custom" id="ID_ALLOMANCY_TIN_INITIATIVE_SURGE">
+		<supports>Tin Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 7 Tin Allomancy</p>
+			<p>Grant allies within 10 ft advantage on Initiative or add +5 to Initiatives one time per vial.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, bonus action, initiative, tin, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Bonus Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">10 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<!--Tin Level 9-->
+
+    <!--Ability-->
+	<!-- <element name="Perceptual Mastery" type="Spell" source="Custom" id="ID_ALLOMANCY_TIN_PERCEPTUAL_MASTERY">
+		<supports>Warlock, Rogue, Cleric, Sorcerer, Ranger, Druid, Bard, Monk, Barbarian, Paladin, Fighter, Artificer</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 9 Tin Allomancy</p>
+			<p>Sense through walls up to 30 ft, perceiving direction and silhouette. Automatically succeed on one Perception or Investigation check per encounter.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, detection, perception, tin, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element> -->
+
+    <!--Zinc Level 1-->
+	<element name="Incite" type="Class Feature" source="Custom" id="ID_ALLOMANCY_ZINC_INCITE">
+		<supports>Zinc Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Zinc Allomancy</p>
+			<p>Target makes a WIS save. On a failure, apply a mild emotional state for 1 turn, such as distracted or slightly enraged; the DM defines a small mechanical +1 or -1.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, mental, emotion, zinc, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">1 turn</set>
+		</setters>
+	</element>
+	<element name="Emotional Spike" type="Class Feature" source="Custom" id="ID_ALLOMANCY_ZINC_EMOTIONAL_SPIKE">
+		<supports>Zinc Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Zinc Allomancy</p>
+			<p>Impose disadvantage on an enemy’s WIS or CHA save against other Allomancy. Uses 1 Allomantic Reaction.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, reaction, disadvantage, mental, zinc, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Reaction</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<!--Zinc Level 3-->
+	<element name="Frenzy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_ZINC_FRENZY">
+		<supports>Zinc Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Zinc Allomancy</p>
+			<p>Choose up to 3 creatures within 30 ft; they make WIS saves. On a failure, they are compelled to attack the nearest target for 1 turn, or become Frightened if you choose.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, mental, frenzy, frightened, zinc, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">1 turn</set>
+		</setters>
+	</element>
+	<element name="Rouse" type="Class Feature" source="Custom" id="ID_ALLOMANCY_ZINC_ROUSE">
+		<supports>Zinc Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Zinc Allomancy</p>
+			<p>Instill courage: targeted ally or allies gain +1d4 to attacks and saves for 1 minute.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, bonus action, support, zinc, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action or Bonus Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">1 minute</set>
+		</setters>
+	</element>
+	<!--Zinc Level 5-->
+	<element name="Riot Aura" type="Class Feature" source="Custom" id="ID_ALLOMANCY_ZINC_RIOT_AURA">
+		<supports>Zinc Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 5 Zinc Allomancy</p>
+			<p>Create a 15 ft aura centered on you. Enemies in the aura have -1 to WIS saves against emotional influence; allies gain +1 to attack rolls.</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 9, Riot Mastery extends the aura to 30 ft and your emotional effects can impose Frightened, Charmed, or Confused on failed saves for 1 turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, aura, emotion, zinc, allomancy, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">15 ft radius</set>
+			<set name="duration">While burning Zinc</set>
+		</setters>
+	</element>
+	<!--Zinc Level 7-->
+	<element name="Mass Frenzy / Calm Switch" type="Class Feature" source="Custom" id="ID_ALLOMANCY_ZINC_MASS_FRENZY_CALM_SWITCH">
+		<supports>Zinc Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 7 Zinc Allomancy</p>
+			<p>Choose to push enemies into Frenzy (must attack) or heavy Panic (Frightened) in a 20 ft cone. WIS save negates. Effects last 5 turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, cone, frenzy, frightened, mental, zinc, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">20 ft cone</set>
+			<set name="duration">5 turns</set>
+		</setters>
+	</element>
+	<element name="Emotional Overdrive" type="Class Feature" source="Custom" id="ID_ALLOMANCY_ZINC_EMOTIONAL_OVERDRIVE">
+		<supports>Zinc Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 7 Zinc Allomancy</p>
+			<p>Target makes a WIS save, on failure targed is confused for 1 turn (DM fiat).</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, bonus action, confusion, mental, zinc, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Bonus Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">1 turn</set>
+		</setters>
+	</element>
+
+    <!--Brass Level 1-->
+	<element name="Soothe" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRASS_SOOTHE">
+		<supports>Brass Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Brass Allomancy</p>
+			<p>Target makes a WIS save or has strong emotion dampened, such as stopping a rage or ending Frightened for 1 round.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, mental, emotion, brass, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+	<element name="Emotional Dull" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRASS_EMOTIONAL_DULL">
+		<supports>Brass Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Brass Allomancy</p>
+			<p>Allow an ally to reroll a failed WIS save against charm or fear. Uses 1 Allomantic Reaction.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, reaction, reroll, charm, fear, brass, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Reaction</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<!--Brass Level 3-->
+	<element name="Mass Soothe" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRASS_MASS_SOOTHE">
+		<supports>Brass Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Brass Allomancy</p>
+			<p>Choose up to 3 creatures within 30 ft; WIS saves or have emotions dampened, ending rage, calming frenzy, or removing Frightened.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, mental, emotion, brass, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<element name="Charm Flicker" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRASS_CHARM_FLICKER">
+		<supports>Brass Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Brass Allomancy</p>
+			<p>Target makes a WIS save or is Charmed for 1 turn; you choose the mood to manipulate.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, bonus action, charm, mental, brass, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action or Bonus Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">1 turn</set>
+		</setters>
+	</element>
+	<!--Brass Level 5-->
+	<element name="Soothe Aura" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRASS_SOOTHE_AURA">
+		<supports>Brass Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 5 Brass Allomancy</p>
+			<p>Create a 15 ft aura. Enemies within have -1 to attack rolls and saves against charm/fear; allies in the aura have advantage against being Frightened.</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 9, Soothing Mastery extends the aura to 30 ft, grants allies advantage against charm/fear, and lets you end one ongoing magical emotional effect per minute while burning.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, aura, charm, fear, brass, allomancy, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">15 ft radius</set>
+			<set name="duration">While burning</set>
+		</setters>
+	</element>
+	<!--Brass Level 7-->
+	<element name="Harmony Wave" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRASS_HARMONY_WAVE">
+		<supports>Brass Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 7 Brass Allomancy</p>
+			<p>A 20 ft radius calming wave removes one condition (Frightened or enraged) from allies and may calm enemies; WIS save or take -2 to attacks for 3 turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, aura, condition, mental, brass, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">20 ft radius</set>
+			<set name="duration">3 turns</set>
+		</setters>
+	</element>
+	<element name="Hypnotic Charm" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRASS_HYPNOTIC_CHARM">
+		<supports>Brass Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 7 Brass Allomancy</p>
+			<p>A target WIS save or be Charmed for 5 turns on failure; target repeats the save at the end of their turn on fail to break the Charmed state early.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, charm, mental, brass, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">5 turns</set>
+		</setters>
+	</element>
+
+    <!--Copper Level 1-->
+	<element name="Coppercloud" type="Class Feature" source="Custom" id="ID_ALLOMANCY_COPPER_COPPERCLOUD">
+		<supports>Copper Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Copper Allomancy</p>
+			<p>Create a 15 ft radius cloud centered on you. Within the cloud, Allomantic detection (Bronze) fails and mental metals have reduced range/effect. Lasts while you burn or until dismissed.</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 3, Expanded Cloud increases the radius to 30 ft. At level 5, enemies in cloud suffer disadvantage on being detected by Bronze and allies have +1 to saves vs mental Allomancy. At level 7, Hardened Cloud resists magical detection and enemies inside suffer -1 to attack and damage. At level 9, Impenetrable Smother makes the cloud effectively a sanctuary against Allomantic and divination detection.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, action, concealment, detection, copper, allomancy, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">15 ft radius</set>
+			<set name="duration">While burning or until dismissed</set>
+		</setters>
+	</element>
+	<element name="Smother" type="Class Feature" source="Custom" id="ID_ALLOMANCY_COPPER_SMOTHER">
+		<supports>Copper Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Copper Allomancy</p>
+			<p>As a reaction, suppress one Allomantic effect targeting an ally within the cloud; it is negated for 1 turn.</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 3, Smother Advanced lets you redirect a single Allomantic effect to a non-critical metal object rather than the ally. At level 9, Impenetrable Smother allows Copper to cancel up to 2 separate Allomantic effects per turn within the cloud.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, reaction, suppression, defense, copper, allomancy, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Reaction</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">15 ft</set>
+			<set name="duration">1 turn</set>
+		</setters>
+	</element>
+	<!--Copper Level 7-->
+	<element name="Ironwall" type="Class Feature" source="Custom" id="ID_ALLOMANCY_COPPER_IRONWALL">
+		<supports>Copper Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 7 Copper Allomancy</p>
+			<p>Create a denser band in the cloud that blocks projectiles made of metal for 1 turn; objects bounce off.</p>
+		</description>
+		<setters>
+			<set name="keywords">charisma, bonus action, defense, projectile, copper, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Bonus Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">15 ft</set>
+			<set name="duration">1 turn</set>
+		</setters>
+	</element>
+
+    <!--Bronze Level 1-->
+	<element name="Detect Burn" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRONZE_DETECT_BURN">
+		<supports>Bronze Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Bronze Allomancy</p>
+			<p>Sense which metal is burning within 30 ft; the type is known and you learn its rough direction.</p>
+			<p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 3, Extended Sense increases the range to 60 ft and lets you distinguish the number of burners and whether they are moving. At level 5, Pulse Read lets you gauge burn intensity (strong or weak) and track stronger burns through thin walls. At level 7, you pick up residual burns in an area (last 10 minutes) and can trace where burners were recently active.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, detection, bronze, allomancy, upgrade</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<element name="Sense Flare" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRONZE_SENSE_FLARE">
+		<supports>Bronze Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Bronze Allomancy</p>
+			<p>When a new metal is burned within range, you immediately know. Uses 1 Allomantic Reaction.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, reaction, detection, bronze, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Reaction</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+    <!--Bronze Level 3-->
+	<element name="Pinpoint" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRONZE_PINPOINT">
+		<supports>Bronze Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Bronze Allomancy</p>
+			<p>Within 30 ft, reveal the exact location of a burner, subject to cover. Uses 1 Allomantic Reaction.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, reaction, detection, bronze, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Reaction</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<!--Bronze Level 7-->
+	<element name="Disrupt Pulse" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRONZE_DISRUPT_PULSE">
+		<supports>Bronze Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 7 Bronze Allomancy</p>
+			<p>Force a CON save against your Allomancy DC from a nearby burner; on a failure, their burning is suppressed for 2 turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, suppression, bronze, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">60 feet</set>
+			<set name="duration">2 turns</set>
+		</setters>
+	</element>
+	<!--Bronze Level 9-->
+	<element name="Seismic Mastery" type="Class Feature" source="Custom" id="ID_ALLOMANCY_BRONZE_SEISMIC_MASTERY"> <!--Question if this is an upgrade to disrupt or how the mastery works, is it separate, action, ability?????-->
+		<supports>Bronze Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 9 Bronze Allomancy</p>
+			<p>Detect burns through walls or ground up to 90 ft and disrupt up to 2 burners with a large CON-based suppression once per long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, detection, suppression, bronze, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">90 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+
+    <!--Gold Level 1-->
+	<element name="Glimpse" type="Class Feature" source="Custom" id="ID_ALLOMANCY_GOLD_GLIMPSE">
+		<supports>Gold Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Gold Allomancy</p>
+			<p>You glimpse an alternate version of yourself; gain advantage on one saving throw you can use this round.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, vision, save, gold, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+			<set name="duration">1 round</set>
+		</setters>
+	</element>
+	<element name="Glimpse Fate" type="Class Feature" source="Custom" id="ID_ALLOMANCY_GOLD_GLIMPSE_FATE">
+		<supports>Gold Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Gold Allomancy</p>
+			<p>Force attackers to reroll one attack and take the second roll. Uses 1 Allomantic Reaction.</p>
+            <p class="indent"><b><i>Allomantic Upgrade.</i></b> At level 7, you can also target an enemy's saving throw.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, reaction, reroll, fate, gold, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Reaction</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<!--Gold Level 3-->
+	<element name="Flash Vision" type="Class Feature" source="Custom" id="ID_ALLOMANCY_GOLD_FLASH_VISION">
+		<supports>Gold Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Gold Allomancy</p>
+			<p>Give an ally advantage on Initiative or their next attack, one time.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, bonus action, vision, initiative, gold, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Bonus Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<element name="Minor Prophecy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_GOLD_MINOR_PROPHECY">
+		<supports>Gold Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Gold Allomancy</p>
+			<p>Ask a single yes/no question about immediate events; the DM may answer cryptically.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, prophecy, vision, gold, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<!--Gold Level 5-->
+
+    <!--Ability-->
+	<!-- <element name="Lingering Vision" type="Spell" source="Custom" id="ID_ALLOMANCY_GOLD_LINGERING_VISION">
+		<supports>Warlock, Rogue, Cleric, Sorcerer, Ranger, Druid, Bard, Monk, Barbarian, Paladin, Fighter, Artificer</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 5 Gold Allomancy</p>
+			<p>Once per long rest, ask the DM a single strong “what-if” or alternate-history-style clue that gives a concrete lead.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, prophecy, investigation, gold, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element> -->
+	<!--Gold Level 7-->
+	<element name="Alternate Self" type="Class Feature" source="Custom" id="ID_ALLOMANCY_GOLD_ALTERNATE_SELF">
+		<supports>Gold Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 7 Gold Allomancy</p>
+			<p>For 5 turns, emulate an alternate-self template: gain +1 to saves and reroll one failed save per turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, reroll, saves, gold, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+			<set name="duration">5 turns</set>
+		</setters>
+	</element>
+
+    <!--Moved to uprgade of Glimpse Fate-->
+	<!-- <element name="Fate Twist" type="Spell" source="Custom" id="ID_ALLOMANCY_GOLD_FATE_TWIST">
+		<supports>Warlock, Rogue, Cleric, Sorcerer, Ranger, Druid, Bard, Monk, Barbarian, Paladin, Fighter, Artificer</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 7 Gold Allomancy</p>
+			<p>Force one enemy to reroll any one d20 (attack or save); you may force them to accept the second result.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, reaction, reroll, fate, gold, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Reaction</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element> -->
+	<!--Gold Level 9-->
+    <!--Ability-->
+	<!-- <element name="Temporal Insight" type="Spell" source="Custom" id="ID_ALLOMANCY_GOLD_TEMPORAL_INSIGHT">
+		<supports>Warlock, Rogue, Cleric, Sorcerer, Ranger, Druid, Bard, Monk, Barbarian, Paladin, Fighter, Artificer</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 9 Gold Allomancy</p>
+			<p>Once per long rest, get a clear vision relevant to a major decision (campaign-level clue) or gain advantage to auto-succeed one critical skill check.</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom, action, vision, prophecy, skill, gold, allomancy</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element> -->
+
+</elements>
