@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Custom Spell List for Allomancy</description>
+		<author>Devon</author>
+		<update version="0.0.1">
+			<file name="allomancySpells_functional_categories.xml" url="https://raw.githubusercontent.com/devonkel4/Aurora-Homebrew/refs/heads/main/allomancySpells_functional_categories.xml"/>
+		</update>
+	</info>
+	<element name="Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_ALLOMANCY">
+		<description>
+			<p>You can learn one or more Allomantic metals. Select each metal as a separate feature; each grants its own actions, bonus actions, reactions, and metal-specific save DC.</p>
+		</description>
+		<sheet>
+			<description>Select one or more Allomantic metals.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Allomantic Metal" supports="Allomancy Metal" number="9"/>
+		</rules>
+	</element>
+	<!--Allomancy Spellcasting / Save DCs-->
+	<element name="Steel Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_STEEL">
+		<description>
+			<p>You have learned to burn steel. Your steel Allomantic abilities use Dexterity for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Dexterity modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Steel Allomancy — Save DC: 8 + proficiency bonus + Dexterity modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:steel:dc" value="8"/>
+			<stat name="allomancy:steel:dc" value="Proficiency"/>
+			<stat name="allomancy:steel:dc" value="Dexterity Modifier"/>
+			<grant type="Spell" id="ID_ALLOMANCY_STEEL_COIN_PUSH" spellcasting="Steel Allomancy" level="1"/>
+			<grant type="Spell" id="ID_ALLOMANCY_STEEL_STEEL_VAULT" spellcasting="Steel Allomancy" level="1"/>
+			<grant type="Spell" id="ID_ALLOMANCY_STEEL_DEFLECTIVE_VAULT" spellcasting="Steel Allomancy" level="1"/>
+			<grant type="Spell" id="ID_ALLOMANCY_STEEL_KINETIC_SHOVE" spellcasting="Steel Allomancy" level="3"/>
+			<grant type="Spell" id="ID_ALLOMANCY_STEEL_STEELSTORM" spellcasting="Steel Allomancy" level="9"/>
+		</rules>
+		<spellcasting name="Steel Allomancy" ability="Dexterity">
+			<list>Steel Allomancy</list>
+		</spellcasting>
+	</element>
+	<element name="Iron Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_IRON">
+		<description>
+			<p>You have learned to burn iron. Your iron Allomantic abilities use Strength for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Strength modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Iron Allomancy — Save DC: 8 + proficiency bonus + Strength modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:iron:dc" value="8"/>
+			<stat name="allomancy:iron:dc" value="Proficiency"/>
+			<stat name="allomancy:iron:dc" value="Strength Modifier"/>
+			<grant type="Spell" id="ID_ALLOMANCY_IRON_PULL_METAL" spellcasting="Iron Allomancy" level="1"/>
+			<grant type="Spell" id="ID_ALLOMANCY_IRON_ANCHOR_SPRINT" spellcasting="Iron Allomancy" level="1"/>
+			<grant type="Spell" id="ID_ALLOMANCY_IRON_DEFLECTIVE_PULL" spellcasting="Iron Allomancy" level="1"/>
+			<grant type="Spell" id="ID_ALLOMANCY_IRON_TETHER_BREAK" spellcasting="Iron Allomancy" level="3"/>
+			<grant type="Spell" id="ID_ALLOMANCY_IRON_IRONSTORM" spellcasting="Iron Allomancy" level="9"/>
+			<grant type="Spell" id="ID_ALLOMANCY_IRON_IRONSTANCE" spellcasting="Iron Allomancy" level="9"/>
+		</rules>
+		<spellcasting name="Iron Allomancy" ability="Strength">
+			<list>Iron Allomancy</list>
+		</spellcasting>
+	</element>
+	<element name="Pewter Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_PEWTER">
+		<description>
+			<p>You have learned to burn pewter. Your pewter Allomantic abilities use Strength for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Strength modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Pewter Allomancy — Save DC: 8 + proficiency bonus + Strength modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:pewter:dc" value="8"/>
+			<stat name="allomancy:pewter:dc" value="Proficiency"/>
+			<stat name="allomancy:pewter:dc" value="Strength Modifier"/>
+		</rules>
+		<spellcasting name="Pewter Allomancy" ability="Strength">
+			<list>Pewter Allomancy</list>
+		</spellcasting>
+	</element>
+	<element name="Tin Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_TIN">
+		<description>
+			<p>You have learned to burn tin. Your tin Allomantic abilities use Wisdom for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Wisdom modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Tin Allomancy — Save DC: 8 + proficiency bonus + Wisdom modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:tin:dc" value="8"/>
+			<stat name="allomancy:tin:dc" value="Proficiency"/>
+			<stat name="allomancy:tin:dc" value="Wisdom Modifier"/>
+		</rules>
+		<spellcasting name="Tin Allomancy" ability="Wisdom">
+			<list>Tin Allomancy</list>
+		</spellcasting>
+	</element>
+	<element name="Zinc Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_ZINC">
+		<description>
+			<p>You have learned to burn zinc. Your zinc Allomantic abilities use Charisma for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Charisma modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Zinc Allomancy — Save DC: 8 + proficiency bonus + Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:zinc:dc" value="8"/>
+			<stat name="allomancy:zinc:dc" value="Proficiency"/>
+			<stat name="allomancy:zinc:dc" value="Charisma Modifier"/>
+		</rules>
+		<spellcasting name="Zinc Allomancy" ability="Charisma">
+			<list>Zinc Allomancy</list>
+		</spellcasting>
+	</element>
+	<element name="Brass Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_BRASS">
+		<description>
+			<p>You have learned to burn brass. Your brass Allomantic abilities use Charisma for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Charisma modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Brass Allomancy — Save DC: 8 + proficiency bonus + Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:brass:dc" value="8"/>
+			<stat name="allomancy:brass:dc" value="Proficiency"/>
+			<stat name="allomancy:brass:dc" value="Charisma Modifier"/>
+		</rules>
+		<spellcasting name="Brass Allomancy" ability="Charisma">
+			<list>Brass Allomancy</list>
+		</spellcasting>
+	</element>
+	<element name="Copper Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_COPPER">
+		<description>
+			<p>You have learned to burn copper. Your copper Allomantic abilities use Charisma for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Charisma modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Copper Allomancy — Save DC: 8 + proficiency bonus + Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:copper:dc" value="8"/>
+			<stat name="allomancy:copper:dc" value="Proficiency"/>
+			<stat name="allomancy:copper:dc" value="Charisma Modifier"/>
+		</rules>
+		<spellcasting name="Copper Allomancy" ability="Charisma">
+			<list>Copper Allomancy</list>
+		</spellcasting>
+	</element>
+	<element name="Bronze Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_BRONZE">
+		<description>
+			<p>You have learned to burn bronze. Your bronze Allomantic abilities use Wisdom for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Wisdom modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Bronze Allomancy — Save DC: 8 + proficiency bonus + Wisdom modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:bronze:dc" value="8"/>
+			<stat name="allomancy:bronze:dc" value="Proficiency"/>
+			<stat name="allomancy:bronze:dc" value="Wisdom Modifier"/>
+		</rules>
+		<spellcasting name="Bronze Allomancy" ability="Wisdom">
+			<list>Bronze Allomancy</list>
+		</spellcasting>
+	</element>
+	<element name="Gold Allomancy" type="Class Feature" source="Custom" id="ID_ALLOMANCY_FEATURE_GOLD">
+		<description>
+			<p>You have learned to burn gold. Your gold Allomantic abilities use Wisdom for their save DC.</p>
+			<p>Allomantic save DC: 8 + proficiency bonus + Wisdom modifier.</p>
+		</description>
+		<supports>Allomancy Metal</supports>
+		<sheet>
+			<description>Gold Allomancy — Save DC: 8 + proficiency bonus + Wisdom modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="allomancy:gold:dc" value="8"/>
+			<stat name="allomancy:gold:dc" value="Proficiency"/>
+			<stat name="allomancy:gold:dc" value="Wisdom Modifier"/>
+		</rules>
+		<spellcasting name="Gold Allomancy" ability="Wisdom">
+			<list>Gold Allomancy</list>
+		</spellcasting>
+	</element>
+	<!--Steel Level 1-->
+	<element name="Coin Push" type="Spell" source="Custom" id="ID_ALLOMANCY_STEEL_COIN_PUSH">
+		<supports>Steel Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Steel Allomancy</p>
+			<p>Fire 1 metal piece as a ranged attack (30ft) Hit: 1d4 + DEX piercing.</p>
+			<p class="indent">
+				<b>
+					<i>Allomantic Upgrade.</i>
+				</b> At level 3, you can shoot two objects at once and the range increases to 60 ft, and at level 5, you can target 3 metal pieces at once. At level 7, the damage upgrades to 1d8+DEX each coin and you can choose between precision shots or a spread.</p>
+		</description>
+		<setters>
+			<set name="keywords">damage, steel, allomancy, dexterity, upgrade</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<element name="Steel Vault" type="Spell" source="Custom" id="ID_ALLOMANCY_STEEL_STEEL_VAULT">
+		<supports>Steel Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Steel Allomancy</p>
+			<p>If there is a nearby metal anchor vault up to 20 feet away from it.</p>
+			<p class="indent">
+				<b>
+					<i>Allomantic Upgrade.</i>
+				</b> At level 5, the vault distance increases to 40 ft. At level 9, you can push off of multiple anchors up to a combined 60 ft.</p>
+		</description>
+		<setters>
+			<set name="keywords">dexterity, bonus action, movement, allomancy, steel</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<element name="Deflective Vault" type="Spell" source="Custom" id="ID_ALLOMANCY_STEEL_DEFLECTIVE_VAULT">
+		<supports>Steel Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Steel Allomancy</p>
+			<p>Impose disadvantage on one incoming metallic ranged attack that targets you or an ally.</p>
+		</description>
+		<setters>
+			<set name="keywords">dexterity, reaction, disadvantage, deflect, allomancy, steel</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Reaction</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<!--Steel Level 3-->
+	<element name="Kinetic Shove" type="Spell" source="Custom" id="ID_ALLOMANCY_STEEL_KINETIC_SHOVE">
+		<supports>Steel Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Steel Allomancy</p>
+			<p>When you push against a metal-worn target, they must make a STR save vs {{allomancy:steel:dc}} or be pushed 10 ft and knocked prone if they hit an obstacle.</p>
+			<p class="indent">
+				<b>
+					<i>Allomantic Upgrade.</i>
+				</b> At level 7, if you successfully push a metal-clad target, they suffer +1d6 bludgeoning as the front of their armor caves in.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, action, bonus action, shove, prone, allomancy, steel</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action or Bonus Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<!--Steel Level 9-->
+	<element name="Steelstorm" type="Spell" source="Custom" id="ID_ALLOMANCY_STEEL_STEELSTORM">
+		<supports>Steel Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 9 Steel Allomancy</p>
+			<p>Spray of metal pieces; targets make a DEX save, or take 3d6 piercing (halved on save).</p>
+		</description>
+		<setters>
+			<set name="keywords">dexterity, action, damage, allomancy, steel</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">20 ft cone</set>
+		</setters>
+	</element>
+	<!--Iron Level 1-->
+	<element name="Pull Metal" type="Spell" source="Custom" id="ID_ALLOMANCY_IRON_PULL_METAL">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Iron Allomancy</p>
+			<p>Pull 1 metal piece as a ranged attack (30ft) Hit: 1d4 + STR piercing. If the metal object is held, target makes a contested STR save, on fail you rip it free if held or yanks them 10 ft if worn.</p>
+			<p class="indent">
+				<b>
+					<i>Allomantic Upgrade.</i>
+				</b> At level 3, you can shoot two objects at once and the range increases to 60 ft, and at level 5, you can target 3 metal pieces at once. At level 7, the damage upgrades to 3d8+STR each coin or you can substitute the damage to instead restrain the target.</p>
+		</description>
+		<setters>
+			<set name="keywords">damage, iron, allomancy, strength, upgrade</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<element name="Anchor Sprint" type="Spell" source="Custom" id="ID_ALLOMANCY_IRON_ANCHOR_SPRINT">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Iron Allomancy</p>
+			<p>If there is a nearby metal anchor vault up to 20 feet towards it.</p>
+			<p class="indent">
+				<b>
+					<i>Allomantic Upgrade.</i>
+				</b> At level 5, the sprint distance increases to 40 ft, at level 7 you can swing between anchors with complete control (upon fail you do not fall), and at level 9 this increases to 60 ft.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, bonus action, movement, allomancy, iron</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<element name="Deflective Pull" type="Spell" source="Custom" id="ID_ALLOMANCY_IRON_DEFLECTIVE_PULL">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 1 Iron Allomancy</p>
+			<p>Impose disadvantage on one incoming metallic ranged attack that targets you or an ally. You may redirect it slightly.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, reaction, disadvantage, deflect, allomancy, iron</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Reaction</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<!--Iron Level 3-->
+	<element name="Tether Break" type="Spell" source="Custom" id="ID_ALLOMANCY_IRON_TETHER_BREAK">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 3 Iron Allomancy</p>
+			<p>Pull an anchor so forcefully it yanks a creature into prone or a hazard (10 ft), targetted creature makes a STR save to resist.</p>
+			<p class="indent">
+				<b>
+					<i>Allomantic Upgrade.</i>
+				</b> At level 7, if you successfully pull a metal-clad target, they suffer +1d6 bludgeoning as the back of their armor caves in.</p>
+			<!--Check abt this upgrade, included to match steel-->
+		</description>
+		<setters>
+			<set name="keywords">strength, action, bonus action, yank, prone, allomancy, iron</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action or Bonus Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<!--Iron Level 9-->
+	<element name="Ironstorm" type="Spell" source="Custom" id="ID_ALLOMANCY_IRON_IRONSTORM">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 9 Iron Allomancy</p>
+			<p>Pull all unsecured metal objects within 30 feet towards yourself; targets make a DEX save, or take 1d6 piercing (halved on save) per object in path.</p>
+		</description>
+		<setters>
+			<set name="keywords">dexterity, action, damage, allomancy, iron</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">30 ft sphere</set>
+		</setters>
+	</element>
+	<element name="Iron Stance" type="Spell" source="Custom" id="ID_ALLOMANCY_IRON_IRONSTANCE">
+		<supports>Iron Allomancy</supports>
+		<description>
+			<p class="indent">Prerequisite: Level 9 Iron Allomancy</p>
+			<p>You may pull all metal aimed at you to a piece of armor on yourself. STR save ({{allomancy:iron:dc}}). Warning: the metal can still bounce and hit you.</p>
+		</description>
+		<setters>
+			<set name="keywords">strength, action, damage, allomancy, iron</set>
+			<set name="level" value="0">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="range">Self</set>
+		</setters>
+	</element>
+	<!--Pewter Level 1-->
+	<!--Pewter passives in different area (same for Greater Flare, Ironhide, and Indomitable)-->
+</elements>
